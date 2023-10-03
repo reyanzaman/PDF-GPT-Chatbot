@@ -6,6 +6,12 @@ Demo website made as a part of DnD Lab Bangladesh for Bangladesh Muktijuddho Jad
 
 This website uses knowledge from PDF to feed into a chatbot which replies in Bangla and is able to do simple tasks such as data analysis and also extract out specific information from the pdf to the user.
 
+## Screenshots
+
+![Home Page](images/1.png?raw=true "Home Page")
+![Chatbot Page](images/2.png?raw=true "Chatbot Page")
+![Profile Page](images/3.png?raw=true "Profile Page")
+
 ## Technical Details
 #### Tech Stacks
 Next.js
@@ -53,9 +59,3 @@ PINECONE_API_KEY
 
 #### Open AI
 OPENAI_API_KEY
-
-## Screenshots
-
-![Home Page](images/1.png?raw=true "Home Page")
-![Chatbot Page](images/2.png?raw=true "Chatbot Page")
-![Profile Page](images/3.png?raw=true "Profile Page")
