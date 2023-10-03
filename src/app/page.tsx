@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
 import { UserButton, auth } from '@clerk/nextjs'
 import Link from 'next/link'
 import { ArrowRight, LogIn } from 'lucide-react'
@@ -57,6 +56,12 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <Link href="https://www.dndlab.org/">
+        <p 
+        className='text-slate-800 absolute bottom-0 mb-2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+          Made as demo by DnDLab.org
+        </p>
+      </Link>
     </div>
   )
 }
