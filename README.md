@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Information about the application
 
-## Getting Started
+Demo website made as a part of DnD Lab Bangladesh for Bangladesh Muktijuddho Jadugor Education Project.
 
-First, run the development server:
+# https://www.dndlab.org/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This website uses knowledge from PDF to feed into a chatbot which replies in Bangla and is able to do simple tasks such as data analysis and also extract out specific information from the pdf to the user.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technical Details
+# Tech Stacks
+Next.js
+Clerk Auth
+DrizzleORM
+Neon DB
+AWS S3
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# AI Tech Stack
+PineconeDB
+Langchain
+OpenAI
+Vercel AI SDK
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Hosting
+Vercel
 
-## Learn More
+## Usage Instructions
 
-To learn more about Next.js, take a look at the following resources:
+use the commands in terminal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# npm install
+# npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+create a .env file with the following variables
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+CLERK_SECRET_KEY
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-## Deploy on Vercel
+# Neon DB
+DATABASE_URL= YOUR_DATABASE_URL + sslmode=require
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# AWS S3
+NEXT_PUBLIC_S3_ACCESS_KEY_ID
+NEXT_PUBLIC_S3_SECRET_ACCESS_KEY
+NEXT_PUBLIC_S3_BUCKET_NAME
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Pinecone
+PINECONE_ENVIRONMENT
+PINECONE_API_KEY
+
+# Open AI
+OPENAI_API_KEY
+
+## Screenshots
+
+![Home Page](images/1.png?raw=true "Home Page")
+![Chatbot Page](images/2.png?raw=true "Chatbot Page")
+![Profile Page](images/3.png?raw=true "Profile Page")
