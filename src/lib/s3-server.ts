@@ -21,7 +21,7 @@ export async function downloadFromS3(file_key: string) {
 
         const obj = await s3.getObject(params).promise()
 
-        const directoryPath = path.join(__dirname, "tmp"); // Create directory path
+        const directoryPath = path.join("/tmp", "your-app-name"); // Create directory path
         fs.mkdirSync(directoryPath, { recursive: true }); // Create the directory if it doesn't exist
         const file_name = path.join(
             directoryPath,
