@@ -37,6 +37,7 @@ const ChatComponent = ({chatId}: Props) => {
       })
     }
   })
+
   return (
     <div className="relative flex flex-col h-screen" id='message-container'>
         {/* header */}
